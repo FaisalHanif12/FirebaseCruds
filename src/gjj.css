@@ -1,0 +1,97 @@
+
+  .Heading 
+  {
+      display: flex;
+      font-size: 30px;
+      align-items: center;
+      justify-content: center;
+  }
+  
+ 
+.pricing-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.plan {
+  background-color: #fff;
+  border: 1px solid #4200f8;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+.plan.recommended {
+  border-color: #007bff;
+}
+
+.plan h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.price {
+  color: #007bff;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.price span {
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+.btn {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+@media (min-width: 500px) {
+  .pricing-table {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .plan {
+    width: 250px;
+  }
+  
+}
+
+@media (max-width: 200px) {
+  .Heading {
+    font-size: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+}
+
+.btn:hover {
+  background-color: black;
+}
